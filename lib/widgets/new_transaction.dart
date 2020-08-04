@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'platform_adaptive_flat_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +95,8 @@ class _NewTransactionState extends State<NewTransaction> {
                             : 'Selected Date: ${DateFormat.yMd().format(_selectedDate)}',
                       ),
                     ),
-                    PlatformAdaptiveFlatButton('Choose Date', _presentDatePicker),
+                    PlatformAdaptiveFlatButton(
+                        'Choose Date', _presentDatePicker),
                   ],
                 ),
               ),
